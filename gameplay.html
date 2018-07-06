@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>Document</title>
+    <style>
+     html {
+        text-align: center;
+        font-family: fantasy;
+    }
+
+    #board div {
+    background-color: black;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    float: left;
+    width: 24px;
+    height: 24px;
+}
+
+#board {
+    width: calc(26 * 24px);
+    margin: auto;
+}
+    
+    </style>
+</head>
+<body onload="initGame">
+    <h1>This Shit Was Hard</h1>
+    <div id= "board"></div>
+<script>
+const board = [];
+const boardWidth = 26, boardHeight = 16;
+
+function initGame(){
+var snakeX;
+var snakeY;
+var snakeDirection;
+var snakeLength;
+const bElement = document.getElementById('board');
+
+    for(var x=0; x< boardHeight; x += 1) {
+        for(var y=0; y< boardWidth; y += 1) {
+            var cell = {};
+
+            // Create a <div></div> and store it in the cell object
+            cell.element = document.createElement('div');
+
+            // Add it to the board
+            bElement.appendChild(cell.element);
+
+            // Add to list of all
+            row.push(cell);
+        }
+         // Add this row to the board
+         board.push(row);
+    }
+}
+
+</script>
+
+    
+</body>
+</html>

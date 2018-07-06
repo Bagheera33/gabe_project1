@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+}
+
+#img{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    
+}
+
+   #intro{ 
+font-family: fantasy;
+font-size: 100px;
+color: antiquewhite;
+position: absolute;
+margin-left:31.5%;
+
+}
+
+#main{
+font-family: fantasy;
+font-size: 150px;
+color: antiquewhite;
+position: absolute;
+margin-top:39%;
+margin-left:33.52%;
+} 
+
+#cover{
+    background-color: rgb(45, 166, 152);
+    width:100%;
+    height:10%;
+    margin-top: 52%;
+    /* border-style: solid;
+    border-color: black; */
+    position: fixed;
+
+}
+
+#start{
+    position: absolute;
+    font-size: 90px;
+    font-family: monospace;
+    margin-top:22%;
+    margin-left:40.5%;
+    border-radius: 50%;
+
+}
+@keyframes button {
+    /* what's this thing do? */
+    0%{ 
+      background-color: red;
+      
+    }
+    10%{ 
+      background-color: goldenrod;
+     
+    }
+  
+    20%{ 
+      background-color: green;
+     
+    }
+
+    30%{
+        background-color: dodgerblue;
+    }
+
+    40%{
+        background-color: indigo;
+    }
+
+    50%{
+        background-color: aqua;
+    }
+
+    60%{
+        background-color: gold;
+    }
+
+    70%{
+        background-color: orangered;
+    }
+
+    80%{
+        background-color: red;
+    }
+
+    90%{
+        background-color: aqua;
+    }
+
+    100%{
+        background-color: fuchsia;
+    }
+
+  }
+  #start:hover{
+      animation: button infinite 3s forwards;
+      
+  }
+  
+
