@@ -62,7 +62,11 @@
     background-color: indigo;
 }
 
+
+
 .snake-board .fruit {
-    /* background-color: gold; */
-    background-image: url("https://media.giphy.com/media/Phv0mZli5ascE/source.gif");
+    background-color: gold;
+}
+html{
+    background-color: black;
 }

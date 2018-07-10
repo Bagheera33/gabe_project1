@@ -15,9 +15,9 @@ function Board(containerId, rowsCount, colsCount) {
 
     this.render = function () {
         var html = "<div class='snake-board'><table>";
-        for (var i = 0; i < this.rowsCount; i++) {
+        for (var i = 0; i < this.rowsCount; i += 1) {
             html += "<tr id='row-" + i + "' class='row'>";
-            for (var j = 0; j < this.colsCount; j++) {
+            for (var j = 0; j < this.colsCount; j += 1) {
                 html += "<td id='" + cellId(i, j) + "' class='col'></td>";
             }
             html += "</tr>"
