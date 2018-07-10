@@ -1,0 +1,183 @@
+.snake-board {
+    position: relative;
+    display: inline-block;
+}
+
+.snake-board .preview {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3;
+    background-color: gray;
+}
+
+.snake-board .score {
+    font-size: 200%;
+    color: blue;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    display: none;
+    font-family: fantasy;
+    animation: back2 1 4.5s forwards;
+    
+}
+
+.snake-board button {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 30%;
+    height: 10%;
+    margin-left: -15%;
+    margin-top: -5%;
+    font-size: 100%;
+    background-color: goldenrod;
+    border: 1px solid darkorchid;
+    border-radius: 100%;
+}
+
+.snake-board button:hover {
+    background-color: dodgerblue;
+    cursor: pointer;
+}
+
+.snake-board table {
+    border-collapse: collapse;
+}
+
+.snake-board td {
+    width: 30px;
+    height: 30px;
+    border: 0;
+}
+
+.snake-board .col {
+    background-color: black;
+}
+
+.snake-board .snake {
+    animation: back infinite 4.5s forwards;
+    border-style: ridge;
+    border-color: aliceblue;
+}
+
+
+
+.snake-board .fruit {
+    animation: back infinite 4.5s forwards;
+    border-style: ridge;
+    border-color: aliceblue;
+}
+
+@keyframes back {
+   
+    0%{ 
+      background-color: crimson;
+      
+    }
+    10%{ 
+      background-color: goldenrod;
+     
+    }
+  
+    20%{ 
+      background-color: green;
+     
+    }
+
+    30%{
+        background-color: dodgerblue;
+    }
+
+    40%{
+        background-color: indigo;
+    }
+
+    50%{
+        background-color: aqua;
+    }
+
+    60%{
+        background-color: gold;
+    }
+
+    70%{
+        background-color: orangered;
+    }
+
+    80%{
+        background-color: red;
+    }
+
+    90%{
+        background-color: aqua;
+    }
+
+    100%{
+        background-color: fuchsia;
+    }
+
+  }
+html{
+ animation: back infinite 4.5s forwards;
+
+}
+
+@keyframes back2 {
+   
+    0%{ 
+      background-color: crimson;
+      height:10%;
+    }
+    10%{ 
+      background-color: goldenrod;
+     
+    }
+  
+    20%{ 
+      background-color: green;
+     
+    }
+
+    30%{
+        background-color: dodgerblue;
+    }
+
+    40%{
+        background-color: indigo;
+    }
+
+    50%{
+        background-color: aqua;
+       
+    }
+
+    60%{
+        background-color: gold;
+    }
+
+    70%{
+        background-color: orangered;
+    }
+
+    80%{
+        background-color: red;
+        
+    }
+
+    90%{
+        background-color: aqua;
+    }
+
+    100%{
+        background-color: fuchsia;
+        height:60%;
+    }
+
+}
